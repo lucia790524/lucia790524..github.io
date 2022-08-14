@@ -20,7 +20,7 @@
             <input
               type="text"
               id="name"
-              name="codigo del producto"
+              placeholder="codigo del producto"
               required
               minlength="4"
               maxlength="14"
@@ -38,7 +38,7 @@
         <li>
           <label for="precio">
             <input type="number" 
-            value="number" 
+            value="number" step="any" id="precio" placeholder="1500"
             placeholder="precio" />
           </label>
         </li>
@@ -58,6 +58,20 @@
               id="fecha de vencimiento"
               placeholder="fecha de vencimiento"
             />
+          </label>
+        </li>
+        <li>
+          <label for="crear">
+            <input
+            type="submit" 
+            value="crear" />
+          </label>
+        </li>
+        <li>
+          <label for="cancelar">
+            <input
+            type="submit" 
+            value="cancelar" />
           </label>
         </li>
       </ul>
