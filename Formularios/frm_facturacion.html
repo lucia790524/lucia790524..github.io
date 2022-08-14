@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="StyleSheet"
+      href="/CSS/styles.css"
+      type="text/css"
+      media="screen"
+    />
+    <title>formularios</title>
+  </head>
+  <body>
+    <form action="">
+      <ul>
+        <li>
+          <label for="fecha de expedicion">
+            <span>fecha de expedicion</span>
+            <input
+              type="date"
+              id="fecha de expedicion"
+              placeholder="fecha de expedicion"
+            />
+          </label>
+        </li>
+        <li>
+          <label for="nombre">
+            <span>Nombre</span>
+            <input type="texto" id="nombre" autocomplete="nombre" />
+          </label>
+        </li>
+        <li>
+          <label for="precio">
+            <span>Precio</span>
+            <input type="number" step="any" id="precio" placeholder="1500" />
+          </label>
+        </li>
+        <li>
+          <label for="descripcion">
+            <span>descripcion</span>
+            <input
+              type="text"
+              id="descrpcion"
+              placeholder="Describa brevemente"
+            />
+          </label>
+        </li>
+        <li>
+          <label for="cantidad">
+            <span>cantidad</span>
+            <input type="number" name="quatity" min="1" max="5" step="0.01" />
+          </label>
+        </li>
+        <li>
+          <label for="fecha hora de compra">
+            <span>fecha hora de compra</span>
+            <input
+              type="datetime-local"
+              id="fecha de compra "
+              placeholder="fecha de compra"
+            />
+          </label>
+        </li>
+        <li>
+          <label for="pago">
+            <span>forma de pago</span>
+            <input type="cc-type" id="cc-number" placeholder="pago" />
+          </label>
+        </li>
+        <li>
+          <label for="fecha hora de compra">
+            <span>fecha hora de compra</span>
+            <input
+              type="datetime-local"
+              id="fecha de compra "
+              placeholder="fecha de compra"
+            />
+          </label>
+        </li>
+        <li>
+          <label for="crear">
+            <input 
+            type="submit" 
+            value="Crear facturacion" />
+          </label>
+        </li>
+        <li >
+          <label for="cancelar">
+            <input
+              type="submit"
+              value="Cancelar facturacion"  />
+          </label>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
