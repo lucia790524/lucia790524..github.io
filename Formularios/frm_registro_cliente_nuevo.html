@@ -4,11 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>formularios</title>
+    <link
+    rel="StyleSheet"
+    href="/CSS/styles.css"
+    type="text/css"
+    media="screen"
+  />
+  <title>formularios</title>
   </head>
   <body>
     <form action="">
       <ul>
+        <li>
+          <label for="Tipo de documento">
+            <input type="text" 
+             id="Tipo de documento" 
+             placeholder="Tipo de documento"
+             required />
+          </label>
+          <li>
+            <label for="Numero de documento">
+              <input type="text" 
+               id="identificacion" 
+               placeholder="Numero de documento"
+               required />
+            </label>
+          <label for="Buscar">
+            <input type="submit" 
+            value="Buscar"
+             required />
+          </label>
+        </li>
         <li>
           <label for="nombre">
             <input type="text" 
@@ -46,17 +72,20 @@
             <input type="text"
              id="name" 
              name="email" 
+             placeholder="correo"
              required />
           </label>
         </li>
         <li>
           <label for="Crear">
             <input type="submit" 
-            value="Crear"
              required />
           </label>
-        </li>
-        <li>
+          <label for="Eliminar">
+            <input type="submit"
+             value="Eliminar" 
+             required />
+          </label>
           <label for="cancelar">
             <input type="submit"
              value="cancelar" 

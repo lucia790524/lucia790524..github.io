@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="StyleSheet"
+    href="/CSS/styles.css"
+    type="text/css"
+    media="screen"
+  />
+    <title>formularios</title>
+  </head>
+  <body>
+    <form action="">
+      <ul>
+        <li>
+          <label for="Numero producto">
+            <input type="text"
+             id="ingresar producto" 
+             placeholder=" Numero producto" 
+             required />
+          </label>
+        </li>
+        <li>
+          <label for="Cantidad">
+            <input type="text"
+             id="Cantidad" 
+             placeholder="Cantidad" 
+             required />
+          </label>
+        </li>
+        <li>
+            <label for="Proveedor">
+                <input type="text"
+                 id="Proveedor" 
+                 placeholder="Proveedor" 
+                 required />
+              </label>
+            </li>
+            <li>
+              <label for="Fecha_Hora_ingreso">
+                  <input type="datetime-local"
+                   id="Fecha_Hora_ingreso" 
+                   placeholder="Fecha_Hora_ingreso" 
+                   required />
+                </label>
+              </li><li>
+                <label for="Fecha_Hora_vencimiento">
+                    <input type="datetime-local"
+                     id="Fecha_Hora_vencimiento" 
+                     placeholder="Fecha_Hora_vencimiento" 
+                     required />
+                  </label>
+                </li>
+
+              <label for="Salir">
+                <input
+                  type="submit"
+                />
+              </label>
+              <label for="Eliminar">
+                <input
+                  type="submit"
+                  value="Eliminar"
+                  required
+                />
+              </label>
+              <label for="Crear">
+                <input
+                  type="submit"
+                  value="Crear"
+                  required
+                />
+              </label>
+            </li>
+          </label>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
