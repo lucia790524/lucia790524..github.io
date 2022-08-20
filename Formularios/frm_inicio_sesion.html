@@ -11,24 +11,23 @@
     media="screen"
   />
     <title>formularios</title>
-    <!-- <link
+    <link
       rel="StyleSheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+      href="/CSS/bootstrap.css"
       type="text/css"
       media="screen"
-    /> -->
+    />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container">
     <header class="page header">
     <main>
       <section>
-        <h1 id="page-title=" 
-        class="title">Mr. Jiro</h1>
+        <i class="fa-regular fa-poo"></i>
+        <h1 class="text-white">Mr. Jiro</h1>
         <nav>
         <form action="">
-          <ul id="main-nav" 
-          class="nav">
-            <li>
+          <ul class="dropdown"> 
+            <ul class="mb-3">
               <label for="correo">
                 <input
                   type="email"
@@ -37,8 +36,8 @@
                   required
                 />
               </label>
-            </li>
-            <li >
+            </ul>
+            <ul class="mb-3">
               <label for="contraseña">
                 <input class="yuki"
                   type="password"
@@ -46,17 +45,21 @@
                   placeholder="Ingresa tu contraseña"
                 />
               </label>
-            </li>
-            <li>
+            </ul>
+            <ul>
               <label for="inicio">
-                <input  type="submit" value="Inicio" />
+                <input class="btn btn-primary" type="submit" value="Iniciar" />
               </label>
-            </li>
+              <label for="inicio">
+                <input class="btn btn-primary" type="submit" value="Registrar" />
+              </label>
+            </ul>
           </ul>
         </form>
       </section>
     </main>
   </nav>
   </header>
+
   </body>
 </html>

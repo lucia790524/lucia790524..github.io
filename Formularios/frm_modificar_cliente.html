@@ -1,79 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="StyleSheet"
-    href="/CSS/styles.css"
-    type="text/css"
-    media="screen"
-  />
-    <title>formularios</title>
+      rel="StyleSheet"
+      href="/CSS/styles.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="/CSS/bootstrap.css"
+      type="text/css"
+      media="screen"
+    />
+    <title>Clientes</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container">
+    <h1 class="text-white">Modificar Cliente</h1>
     <form action="">
-      <ul>
-        <li>
-            <label for="identificacion">
-              <input type="text" 
-               name="identificacion" 
-               placeholder="identificacion"
-               required />
-            </label>
-          </li>
-          <li>
+      <ul class="dropdown">
+        <li class="mb-3">
+          <label for="Tipo de documento">
+            <input
+              type="text"
+              id="Tipo de documento"
+              placeholder="Tipo de documento"
+              required
+            />
+          </label>
+        </li>
+        <li class="mb-3">
+          <label for="Numero de documento">
+            <input
+              type="text"
+              id="identificacion"
+              placeholder="Numero de documento"
+              required
+            />
+          </label>
+        </li>
+        <li class="mb-3">
           <label for="nombre">
-            <input type="text" 
-             name="nombre" 
-             placeholder="nombre"
-             required />
+            <input type="text" name="nombre" placeholder="Nombre" required />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
           <label for="apellido">
-            <input type="family_ name"
+            <input
+              type="family_ name"
               name="apellido"
-              placeholder="apellido"
-              required />
+              placeholder="Apellido"
+              required
+            />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
           <label for="direccion">
-            <input type="street-address" 
-             name="direccion"
-             placeholder="direccion"
-              required />
+            <input
+              type="street-address"
+              name="direccion"
+              placeholder="Direccion"
+              required
+            />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
           <label for="telefono">
-            <input type="tel" 
-             name="telefono"
-             placeholder="telefono"
-              required />
+            <input type="tel" name="telefono" placeholder="Telefono" required />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
           <label for="email">
-            <input type="text"
-             id="name" 
-             name="email"
-             placeholder="correo" 
-             required />
+            <input
+              type="text"
+              id="name"
+              name="email"
+              placeholder="Correo"
+              required
+            />
           </label>
         </li>
         <li>
-          <label for="Modificar">
-            <input type="submit" 
-            value="Modificar"
-             required />
+          <label for="Crear" >
+            <input type="submit" required class="btn btn-primary" />
           </label>
           <label for="cancelar">
-            <input type="submit"
-             value="cancelar" 
-             required />
+            <input type="submit" value="cancelar" class="btn btn-primary" />
           </label>
         </li>
       </ul>
