@@ -10,12 +10,18 @@
       type="text/css"
       media="screen"
     />
+    <link
+    rel="stylesheet"
+    href="/CSS/bootstrap.css"
+    type="text/css"
+    media="screen"
+  />
     <title>formularios</title>
   </head>
-  <body class="centrar">
+  <body class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container">
     <form action="">
       <ul class="dropdown">
-        <li>
+        <li class="mb-3">
           <label for="# Factura">
             <input
               type="text"
@@ -24,14 +30,14 @@
             />
           </label>
         </li>
-        <li>
+        <li class="mb-3" >
           <label for="# Productos">
             <input type="text" 
             id="# Productos"
              placeholder="# Productos" />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
           <label for="precio">
             <input type="number" 
             step="any" 
@@ -39,7 +45,7 @@
              placeholder="1500" />
           </label>
         </li>
-        <li>
+        <li class="mb-3" >
           <label for="descripcion">
             <input
               type="text"
@@ -48,7 +54,7 @@
             />
           </label>
         </li>
-        <li>
+        <li class="mb-3" >
           <label for="cantidad">
             <input type="number"
              name="quatity"
@@ -58,12 +64,12 @@
            placeholder="Cantidad"/>
           </label>
         </li>
-        <li>
+        <li class="mb-3" >
           <label for="pago">
             <input type="cc-type" id="cc-number" placeholder="pago" />
           </label>
         </li>
-        <li>
+        <li class="mb-3" >
           <label for="fecha hora de compra">
             <input
               type="datetime-local"
@@ -72,20 +78,20 @@
             />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
           <label for="crear">
             <input 
             type="submit" 
-            value="Crear facturacion" />
+            value="Crear "class="btn btn-primary"  />
           </label>
           <label for="cancelar">
             <input
               type="submit"
-              value="Cancelar facturacion"  />
+              value="Cancelar" class="btn btn-primary"  />
           </label>
           <label for="Enviar">
             <input
-              type="submit"/>    
+              type="submit" class="btn btn-primary" />    
           </label>
         </li>
       </ul>

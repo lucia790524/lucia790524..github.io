@@ -28,6 +28,10 @@
   background-color: rgb(149, 252, 109);
 }
 
+.page-header {
+  background-color: #8f204b;
+}
+
 html,
 body {
   margin: 0;
