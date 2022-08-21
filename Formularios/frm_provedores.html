@@ -6,32 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="StyleSheet"
-      href="/css/styles.css"
+      href="/CSS/styles.css"
       type="text/css"
       media="screen"
       />
-    <title>formularios</title>
+      <link
+      rel="stylesheet"
+      href="/CSS/bootstrap.css"
+      type="text/css"
+      media="screen"
+    />
+    <title>Proveedores</title>
      </head>
-      <body class="dropdown">
+      <body class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-left container " >
+        <h3 class="text-white">Proveedor</h3>
        <form action=""> 
-          <ul> 
+          <ul class="dropdown" > 
            <li>
              <label for=" Identificacion_Proveedor">
-                <input type="text" 
+                <input type="text" class="mb-3"
                 id="Identificacion_Proveedor" 
                 placeholder="Identificacion_Proveedor">
             </label>
            </li>
             <li>     
              <label for="Nombre_Proveedor">      
-                <input type="text" 
+                <input type="text"  class="mb-3"
                 id="Nombre_Proveedor"
                 placeholder="Nombre_Proveedor">
             </label> 
           </li>
           <li>
             <label for="Numero producto">
-              <input type="text"
+              <input type="text" class="mb-3"
                id="ingresar producto" 
                placeholder=" Numero producto" 
                required />
@@ -39,25 +46,25 @@
           </li>
           <li >
             <label for="Direccion">
-            <input type="text"
+            <input type="text" class="mb-3"
             id="Direccion"
              placeholder="Direccion">
             </label> 
           </li> 
           <li> 
             <label for="Telefono">
-                <input type="text"
+                <input type="text" class="mb-3"
                 id="Telefono" 
                 placeholder="Telefono">
             </label> 
          </li>
          <li>
             <label for="Buscar">
-                <input
-                type="submit"
+                <input class="mb-3"
+                type="submit" 
                 value="Buscar" />
             </label<label for="Eliminar">
-                <input
+                <input class="mb-3"
                 type="submit"
                 value="Eliminar" />
             </label>

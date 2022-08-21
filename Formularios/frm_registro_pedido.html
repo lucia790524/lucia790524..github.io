@@ -9,27 +9,36 @@
     href="/CSS/styles.css"
     type="text/css"
     media="screen"
-  />
-    <title>formularios</title>
+  /> 
+  <link
+      rel="stylesheet"
+      href="/CSS/bootstrap.css"
+      type="text/css"
+      media="screen">
+    <title>Pedido</title>
 </head>
-<body class="dropdown">
+<body  class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container">
+  <figure>
+    <img  class="logo" src="../img/MrJiro.jpeg" alt="logo"/>
+  </figure>
+  <h3 class="text-white">Pedido</h3>
     <form action="">
-        <ul>
-          <li>
+        <ul class="dropdown">
+          <li class="mb-3">
             <label for="Nombre">
               <input type="text"
                id="" 
                placeholder="Nombre" />
             </label>
           </li>
-          <li>
+          <li class="mb-3" >
             <label for="Precio">
               <input type="number" 
               value="number" 
               placeholder="Precio" />
             </label>
           </li>
-          <li>
+          <li class="mb-3">
             <label for="Descripcion">
               <input
                 type="text"
@@ -38,16 +47,16 @@
               />
             </label>
           </li>
-          <li>
+          <li class="mb-3" >
             <label for="Cantidad">
               <input
                 type="number"
-                name="quatity" min="1" max="5" step="0.01"
+                name="quatity" min="0"
                 placeholder="Cantidad"
               />
             </label>
           </li>
-          <li>
+          <li class="mb-3" >
             <label for="Fecha hora">
               <input
                 type="datetime-local"
@@ -56,20 +65,15 @@
               />
             </label>
           </li>
-          <li>
+          <li class="mb-3">
             <label for="Crear">
               <input
-              type="submit" 
+              type="submit" class="btn btn-primary"
               value="Crear" />
-            </label>
-            <label for="Modificar">
-              <input
-              type="submit" 
-              value="Modificar" />
             </label>
             <label for="Cancelar">
               <input
-              type="submit" 
+              type="submit" class="btn btn-primary"
               value="Cancelar" />
             </label>
           </li>

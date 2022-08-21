@@ -10,12 +10,22 @@
     type="text/css"
     media="screen"
   />
-    <title>formularios</title>
+  <link
+      rel="stylesheet"
+      href="/CSS/bootstrap.css"
+      type="text/css"
+      media="screen"
+    />
+    <title>Inventario</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container">
+    <figure>
+      <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
+    </figure>
+    <h3 class="text-white">Inventario</h3>
     <form action="">
       <ul class="dropdown">
-        <li>
+        <li class="mb-3">
           <label for="Numero producto">
             <input type="text"
              id="ingresar producto" 
@@ -23,7 +33,7 @@
              required />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
           <label for="Cantidad">
             <input type="text"
              id="Cantidad" 
@@ -31,7 +41,7 @@
              required />
           </label>
         </li>
-        <li>
+        <li class="mb-3">
             <label for="Proveedor">
                 <input type="text"
                  id="Proveedor" 
@@ -39,14 +49,15 @@
                  required />
               </label>
             </li>
-            <li>
+            <li class="mb-3">
               <label for="Fecha_Hora_ingreso">
                   <input type="datetime-local"
                    id="Fecha_Hora_ingreso" 
                    placeholder="Fecha_Hora_ingreso" 
                    required />
                 </label>
-              </li><li>
+              </li>
+              <li class="mb-3">
                 <label for="Fecha_Hora_vencimiento">
                     <input type="datetime-local"
                      id="Fecha_Hora_vencimiento" 
@@ -54,7 +65,7 @@
                      required />
                   </label>
                 </li>
-
+                <li class="mb-3">
               <label for="Salir">
                 <input
                   type="submit"
@@ -76,7 +87,6 @@
               </label>
             </li>
           </label>
-        </li>
       </ul>
     </form>
   </body>

@@ -16,86 +16,60 @@
       type="text/css"
       media="screen"
     />
-    <title>Buscar Clientes</title>
+    <title>Buscar Producto</title>
   </head>
   <body
-    class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container-secundary text-white"
+    class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container"
   >
+  
     <figure>
       <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
     </figure>
-    <h3>Buscar Cliente</h3>
+   <h3 class="text-white">Buscar Producto</h3>
     <form action="">
       <ul class="dropdown">
         <li>
-          <label for="Tipo de documento">
-            <select
-              name="Tipo de documento"
-              class="form-select mb-3 form-select-sm"
-            >
-              <option selected>Tipo de documento</option>
-              <option value="CC">Cedula</option>
-              <option value="NIT">NIT</option>
-              <option value="CE">Cedula Extranjeria</option>
-            </select>
-          </label>
-        </li>
-        <li>
-          <label for="identificacion">
+          <label for="Codigo Producto">
             <input
               class="mb-3"
               type="text"
-              name="identificacion"
-              placeholder="Identificacion"
+              name="Codigo Producto"
+              placeholder="Codigo Producto"
               required
             />
           </label>
         </li>
         <li>
           <label for="Buscar">
-            <input
-              type="submit"
-              value="Buscar"
-              class="btn btn-primary"
-              required
-            />
+            <input type="submit" value="Buscar" class="mb-3" required />
           </label>
           <label for="cancelar">
-            <input
-              type="submit"
-              value="cancelar"
-              class="btn btn-primary"
-              required
-            />
+            <input type="submit" value="cancelar" class="mb-3" required />
           </label>
         </li>
       </ul>
     </form>
-    <table class="table text-white">
+    <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Tipo</th>
-          <th scope="col">Identificacion</th>
+          
+          <th scope="col">Codigo</th>
           <th scope="col">Nombre</th>
-          <th scope="col">Apellido</th>
-          <th scope="col">Correo</th>
+          <th scope="col">Fecha_de_Ingreso</th>
           <th scope="col">Modificar</th>
           <th scope="col">Eliminar</th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
         <tr>
-          <th scope="col">1.</th>
-          <th scope="col">C.C.</th>
+          <th scope="col">00000</th>
+          <th scope="col">Harina</th>
           <th scope="col">123456</th>
-          <th scope="col">Juan</th>
-          <th scope="col">Perez</th>
-          <th scope="col">juan.perez@correo.com</th>
+          </th>
           <th scope="col">
             <label for="Modificar">
-                 type="submit"
-             <input
+              <input 
+                type="submit"
                 value="Modificar"
                 required
                 class="btn btn-primary"
@@ -104,8 +78,8 @@
           </th>
           <th scope="col">
             <label for="Eliminar">
-                type="submit"
               <input
+                type="submit"
                 value="Eliminar"
                 required
                 class="btn btn-primary"

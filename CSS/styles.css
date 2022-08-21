@@ -1,10 +1,14 @@
-
 .container {
   background-image: url(/img/fondo_001.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.container-secundary {
+  background-color: #130208;
+}
+
 .nav {
   margin-top: 10px;
   list-style-type: none;
@@ -13,7 +17,7 @@
 .nav li {
   display: inline-block;
 }
-*/ .nav a {
+.nav a {
   color: bisque;
   background-color: darkturquoise;
   padding: 5px;
@@ -22,22 +26,6 @@
 }
 .nav .configuracion {
   background-color: rgb(149, 252, 109);
-}
-
-/* ::placeholder {
-  color:blue;
-  opacity: 1; 
-}
-.nav .yuki::placeholder{
-  color: brown;
-} */
-
-/* .nav .yuki{
-  background-color: aquamarine;
-} */
-
-.page-header {
-  background-color: #8f204b;
 }
 
 html,
@@ -89,6 +77,10 @@ main {
   overflow: hidden;
   list-style-type: none;
   list-style-position: unset;
+}
+.logo {
+  border-radius: 50%;
+  width: 150px;
 }
 .dropdown .dropbtn {
   font-size: 16px;

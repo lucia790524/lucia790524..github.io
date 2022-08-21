@@ -5,43 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="StyleSheet"
-    href="/CSS/styles.css"
-    type="text/css"
-    media="screen"
-  />
-    <title>formularios</title>
+      rel="StyleSheet"
+      href="/CSS/styles.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="/CSS/bootstrap.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <title>Usuario</title>
   </head>
-  <body class="dropdown" >
+
+  <body
+    class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container"
+  >
+    <figure>
+      <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
+    </figure>
+    <h3 class="text-white">Usuario</h3>
     <form action="">
       <header>
         <nav>
-          <lu>
-            <li>
+          <lu class="dropdown">
+            <li class="mb-3">
               <label for="Registro usuario">
-                <input type="text" 
-                id="Registro usuario" 
-                placeholder="nombre@ejemplo.com" />
+                <input
+                  type="text"
+                  id="Registro usuario"
+                  placeholder="Nombre"
+                />
               </label>
             </li>
-            <li>
-              <label for="Crear contraseña">
-                <input type="text" 
-                id="Crear contraseña" 
-                placeholder="Crear contraseña" />
+            <li class="mb-3">
+              <label for="email">
+                <input
+                  type="text"
+                  id="name"
+                  name="email"
+                  placeholder="Correo"
+                  required
+                />
               </label>
-              <li>
-                <label for="crear">
-                  <input
-                  type="submit" 
-                  value="crear" />
-                </label>
-                <label for="cancelar">
-                  <input
-                  type="submit" 
-                  value="cancelar" />
-                </label>
-              </li>
+            </li>
+            <li class="mb-3">
+              <label for="Crear contraseña">
+                <input
+                  type="password"
+                  id="Crear contraseña"
+                  placeholder="Crear contraseña"
+                />
+              </label>
+            </li>
+            <li class="mb-3">
+              <label for="Confirmar contraseña">
+                <input
+                  type="password"
+                  id="Confirmar contraseña"
+                  placeholder="Confirmar contraseña"
+                />
+              </label>
+            </li>
+            <li class="mb-3">
+              <label for="iniciar">
+                <input type="submit" class="btn btn-primary" value="crear" />
+              </label>
+              <label for="cancelar">
+                <input type="submit" class="btn btn-primary" value="cancelar" />
+              </label>
             </li>
           </lu>
         </nav>

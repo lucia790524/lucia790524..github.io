@@ -6,45 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="StyleSheet"
-      href="/css/styles.css"
+      href="/CSS/styles.css"
       type="text/css"
       media="screen"
     />
-    <title>formularios</title>
+    <link
+      rel="stylesheet"
+      href="/CSS/bootstrap.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <title>Registro_Producto</title>
   </head>
-  <body class="dropdown">
+  <body
+    class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-left container "
+  >
+  <h3 class="text-white">Registro_Producto</h3>
     <form action="">
-      <ul>
+      <ul class="dropdown">
         <li>
           <label for="codigo de producto">
-            <input
+            <input 
+              class="mb-3"
               type="text"
               id="name"
               placeholder="codigo del producto"
               required
               minlength="4"
               maxlength="14"
-              size="10"
             />
           </label>
         </li>
         <li>
           <label for="nombre">
-            <input type="text"
-             id="" 
-             placeholder="nombre" />
+            <input type="text" id="" placeholder="nombre" class="mb-3"  />
           </label>
         </li>
         <li>
           <label for="precio">
-            <input type="number" 
-            value="number" step="any" id="precio" placeholder="1500"
-            placeholder="precio" />
+            <input  class="mb-3" 
+              type="text"
+              placeholder="Precio"
+            />
           </label>
         </li>
         <li>
           <label for="descripcion">
-            <input
+            <input class="mb-3"
               type="text"
               id="descripcion"
               placeholder="breve descripcion"
@@ -54,7 +63,7 @@
         <li>
           <label for="fecha de vencimiento">
             <input
-              type="datetime-local"
+              type="datetime-local" class="mb-3"
               id="fecha de vencimiento"
               placeholder="fecha de vencimiento"
             />
@@ -62,14 +71,10 @@
         </li>
         <li>
           <label for="crear">
-            <input
-            type="submit" 
-            value="crear" />
+            <input type="submit" value="crear" class="mb-3" />
           </label>
           <label for="cancelar">
-            <input
-            type="submit" 
-            value="cancelar" />
+            <input type="submit" value="cancelar"  class="mb-3"/>
           </label>
         </li>
       </ul>
