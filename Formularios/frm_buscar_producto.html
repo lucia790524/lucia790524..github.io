@@ -1,88 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="StyleSheet"
-      href="/CSS/styles.css"
-      type="text/css"
-      media="screen"
-    />
-   
-    <title>Buscar Producto</title>
-  </head>
-  <body
-    class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container"
-  >
-  
-    <figure>
-      <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
-    </figure>
-   <h3 class="text-white">Buscar Producto</h3>
-    <form action="">
-      <ul class="dropdown">
-        <li>
-          <label for="Codigo Producto">
-            <input
-              class="mb-3"
-              type="text"
-              name="Codigo Producto"
-              placeholder="Codigo Producto"
-              required
-            />
-          </label>
-        </li>
-        <li>
-          <label for="Buscar">
-            <input type="submit" value="Buscar" class="mb-3" required />
-          </label>
-          <label for="cancelar">
-            <input type="submit" value="cancelar" class="mb-3" required />
-          </label>
-        </li>
-      </ul>
-    </form>
-    <table class="table">
-      <thead>
-        <tr>
-          
-          <th scope="col">Codigo</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Fecha_de_Ingreso</th>
-          <th scope="col">Modificar</th>
-          <th scope="col">Eliminar</th>
-        </tr>
-      </thead>
-      <tbody class="table-group-divider">
-        <tr>
-          <th scope="col">00000</th>
-          <th scope="col">Harina</th>
-          <th scope="col">123456</th>
-          </th>
-          <th scope="col">
-            <label for="Modificar">
-              <input 
-                type="submit"
-                value="Modificar"
-                required
-                class="btn btn-primary"
-              />
-            </label>
-          </th>
-          <th scope="col">
-            <label for="Eliminar">
-              <input
-                type="submit"
-                value="Eliminar"
-                required
-                class="btn btn-primary"
-              />
-            </label>
-          </th>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="StyleSheet" href="/CSS/styles.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/CSS/bootstrap.css" type="text/css" media="screen" />
+  <title>Buscar Clientes</title>
+</head>
+
+<body class="container-secundary">
+
+  <main>
+    <section>
+      <article class="d-flex flex-column justify-content-center align-items-center text-center ">
+        <form action="">
+          <ul class="dropdown">
+            <figure>
+              <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
+            </figure>
+            <h3 class="text-white">Buscar Producto</h3>
+            <li>
+              <label for="Codigo Producto">
+                <input class="mb-3 text-center" type="text" name="Codigo Producto" placeholder="Codigo Producto" required />
+              </label>
+            </li>
+            <li>
+              <label for="Buscar">
+                <input type="submit" value="Buscar" class="btn btn-primary mb-3" required />
+              </label>
+              <label for="cancelar">
+                <input type="submit" value="cancelar" class="btn btn-primary mb-3" required />
+              </label>
+            </li>
+          </ul>
+        </form>
+      </article>
+      <table class="table text-white container-secundary">
+        <thead>
+          <tr>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha Ingreso</th>
+            <th scope="col">Modificar</th>
+            <th scope="col">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="col">00000</th>
+            <th scope="col">Harina</th>
+            <th scope="col">10/08/2022</th>
+            </th>
+            <th scope="col">
+              <label for="Modificar">
+                <input type="submit" value="Modificar" required class="btn btn-primary" />
+              </label>
+            </th>
+            <th scope="col">
+              <label for="Eliminar">
+                <input type="submit" value="Eliminar" required class="btn btn-primary" />
+              </label>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+<footer>Gracias por su visita</footer>
 </html>

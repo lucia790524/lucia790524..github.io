@@ -11,10 +11,16 @@
 
 <body class="container">
   <header>
-    <figure class="figure">
-      <img class="logo img-fluid" src="../img/MrJiro.jpeg" alt="logo" />
-    </figure>
     <nav class="navbar">
+      <figure class="dropdown">
+        <img class="logo-ppal" src="../img/logo_MrJiro.jpeg" alt="logo" />
+      </figure>
+      <ul class="dropdown">
+        <button class="dropbtn">
+          Inicio
+          <i class="fa fa-caret-down"></i>
+        </button>
+      </ul>
       <ul class="dropdown">
         <button class="dropbtn">
           Clientes
@@ -31,7 +37,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <li class="dropdown-content">
-          <a href="/Formularios/frm_registro_producto_nuevo.html">Registrar Productos</a>
+          <a href="/Formularios/frm_registrar_productos.html">Registrar Productos</a>
           <a href="/Formularios/frm_buscar_producto.html">Buscar Productos</a>
         </li>
       </ul>
@@ -41,8 +47,8 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <li class="dropdown-content">
-          <a href="#">Registrar Pedidos</a>
-          <a href="#">Buscar Pedidos</a>
+          <a href="/Formularios/frm_registro_pedido.html">Registrar Pedidos</a>
+          <a href="/Formularios/frm_buscar_pedido.html">Buscar Pedidos</a>
         </li>
       </ul>
       <ul class="dropdown">
@@ -70,8 +76,8 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <li class="dropdown-content">
-          <a href="/Formularios/frm_registro_cliente.html">Registrar Cliente</a>
-          <a href="/Formularios/frm_buscar_cliente.html">Buscar Cliente</a>
+          <a href="/Formularios/frm_registro_usuario.html">Registrar usuario</a>
+          <a href="#">Cerrar sesion</a>
         </li>
       </ul>
     </nav>
@@ -79,5 +85,4 @@
   <main></main>
   <footer>Gracias por la visita</footer>
 </body>
-
 </html>

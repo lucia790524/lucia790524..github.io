@@ -18,48 +18,48 @@
       media="screen"
     />
   </head>
-  <body class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center container">
-    <header class="page header">
+  <body class="container">
+    <header></header>
     <main>
       <section>
-        <i class="fa-regular fa-poo"></i>
-        <h1 class="text-white">Mr. Jiro</h1>
-        <nav>
-        <form action="">
-          <ul class="dropdown"> 
-            <ul class="mb-3">
-              <label for="correo">
-                <input
-                  type="email"
-                  id="text"
-                  placeholder="Nombre@ejemplo.com"
-                  required
-                />
-              </label>
+        <article  class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center">
+          <form action="">
+            <ul class="dropdown">
+              <figure>
+                <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
+              </figure>
+              <li class="mb-3">
+                <label for="correo">
+                  <input class="text-center"
+                    type="email"
+                    id="text"
+                    placeholder="correo@ejemplo.com"
+                    required
+                  />
+                </label>
+              </li>
+              <li class="mb-3">
+                <label for="contraseña">
+                  <input class="text-center"
+                    type="password"
+                    id="contraseña"
+                    placeholder="Ingresar contraseña"
+                  />
+                </label>
+              </li>
+              <li>
+                <label for="inicio">
+                  <input class="btn btn-primary" type="submit" value="Iniciar" />
+                </label>
+                <label for="inicio">
+                  <input class="btn btn-primary" type="submit" value="Registrar" />
+                </label>
+              </li>
             </ul>
-            <ul class="mb-3">
-              <label for="contraseña">
-                <input class="yuki"
-                  type="password"
-                  id="contraseña"
-                  placeholder="Ingresa Contraseña"
-                />
-              </label>
-            </ul>
-            <ul>
-              <label for="inicio">
-                <input class="btn btn-primary" type="submit" value="Iniciar" />
-              </label>
-              <label for="inicio">
-                <input class="btn btn-primary" type="submit" value="Registrar" />
-              </label>
-            </ul>
-          </ul>
-        </form>
+          </form>
+        </article>
       </section>
     </main>
-  </nav>
-  </header>
-
   </body>
+  <footer>Gracias por la visita</footer>
 </html>

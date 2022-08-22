@@ -1,3 +1,17 @@
+/* Clases para logo*/
+
+.logo-ppal {
+  border-radius: 60%;
+  width: 50px;
+
+}
+
+.logo {
+  border-radius: 50%;
+  width: 150px;
+}
+
+/* Clases para el fondo de pagina.*/
 .container {
   background-image: url(/img/fondo_001.jpg);
   background-size: cover;
@@ -8,6 +22,8 @@
 .container-secundary {
   background-color: #130208;
 }
+
+/* Clases que afectan la barra de navegación*/
 
 .nav {
   margin-top: 10px;
@@ -28,10 +44,7 @@
   background-color: rgb(149, 252, 109);
 }
 
-.page-header {
-  background-color: #8f204b;
-}
-
+/* Clases globales */
 html,
 body {
   margin: 0;
@@ -50,19 +63,11 @@ footer {
   left: 0;
   width: 100%;
 }
-.pagina {
-  position: relative;
-  min-height: 100%;
-}
-.centrar {
-  text-align: center;
-  width: 30px;
-  margin: left 15px;
-}
 
 main {
   padding-bottom: 50px; /* este valor debe ser igual o mayor al alto del pie */
 }
+
 .navbar {
   overflow: hidden;
   background-color: #130208;
@@ -82,10 +87,7 @@ main {
   list-style-type: none;
   list-style-position: unset;
 }
-.logo {
-  border-radius: 50%;
-  width: 150px;
-}
+
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;

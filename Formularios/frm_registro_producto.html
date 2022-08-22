@@ -1,83 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="StyleSheet"
-      href="/CSS/styles.css"
-      type="text/css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      href="/CSS/bootstrap.css"
-      type="text/css"
-      media="screen"
-    />
 
-    <title>Registro_Producto</title>
-  </head>
-  <body
-    class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-left container "
-  >
-  <h3 class="text-white">Registro_Producto</h3>
-    <form action="">
-      <ul class="dropdown">
-        <li>
-          <label for="codigo de producto">
-            <input 
-              class="mb-3"
-              type="text"
-              id="name"
-              placeholder="codigo del producto"
-              required
-              minlength="4"
-              maxlength="14"
-            />
-          </label>
-        </li>
-        <li>
-          <label for="nombre">
-            <input type="text" id="" placeholder="nombre" class="mb-3"  />
-          </label>
-        </li>
-        <li>
-          <label for="precio">
-            <input  class="mb-3" 
-              type="text"
-              placeholder="Precio"
-            />
-          </label>
-        </li>
-        <li>
-          <label for="descripcion">
-            <input class="mb-3"
-              type="text"
-              id="descripcion"
-              placeholder="breve descripcion"
-            />
-          </label>
-        </li>
-        <li>
-          <label for="fecha de vencimiento">
-            <input
-              type="datetime-local" class="mb-3"
-              id="fecha de vencimiento"
-              placeholder="fecha de vencimiento"
-            />
-          </label>
-        </li>
-        <li>
-          <label for="crear">
-            <input type="submit" value="crear" class="mb-3" />
-          </label>
-          <label for="cancelar">
-            <input type="submit" value="cancelar"  class="mb-3"/>
-          </label>
-        </li>
-      </ul>
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="StyleSheet" href="/CSS/styles.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/CSS/bootstrap.css" type="text/css" media="screen" />
+  <title>Registro Producto</title>
+</head>
+
+<body class="container-secundary">
+  <main>
+    <section>
+      <article class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center">
+        <form action="">
+          <ul class="dropdown">
+            <figure>
+              <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
+            </figure>
+            <h3 class="text-white">Registrar producto</h3>
+            <li>
+              <label for="codigo de producto">
+                <input class="mb-3" type="text" id="name" placeholder="codigo del producto" required minlength="4"
+                  maxlength="14" />
+              </label>
+            </li>
+            <li>
+              <label for="nombre">
+                <input type="text" id="" placeholder="nombre" class="mb-3" />
+              </label>
+            </li>
+            <li>
+              <label for="precio">
+                <input class="mb-3" type="text" placeholder="Precio" />
+              </label>
+            </li>
+            <li>
+              <label for="descripcion">
+                <input class="mb-3" type="text" id="descripcion" placeholder="breve descripcion" />
+              </label>
+            </li>
+            <li>
+              <label for="fecha de vencimiento">
+                <input type="datetime-local" class="mb-3" id="fecha de vencimiento"
+                  placeholder="fecha de vencimiento" />
+              </label>
+            </li>
+            <li>
+              <label for="crear">
+                <input type="submit" value="crear" class="btn btn-primary" />
+              </label>
+              <label for="cancelar">
+                <input type="submit" value="cancelar" class="btn btn-primary" />
+              </label>
+            </li>
+          </ul>
+        </form>
+      </article>
+    </section>
+  </main>
+
+
+</body>
+<footer>Gracias por la visita</footer>
+
 </html>
