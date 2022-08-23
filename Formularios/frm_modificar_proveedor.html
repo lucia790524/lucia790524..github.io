@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="StyleSheet" href="/CSS/styles.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/CSS/bootstrap.css" type="text/css" media="screen" />
+  <title>Modificar Proveedores</title>
+</head>
+
+<body class=" container-secundary ">
+  <header></header>
+  <main>
+    <section>
+      <article class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center">
+        <form action="">
+          <ul class="dropdown">
+            <figure>
+              <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
+            </figure>
+            <h3 class="text-white">Modificar Proveedor</h3>
+            <li>
+              <select name="Tipo de documento" class="form-select mb-3 form-select-sm">
+                <option selected>Tipo de documento</option>
+                <option value="CC">Cedula</option>
+                <option value="NIT">NIT</option>
+                <option value="CE">Cedula Extranjeria</option>
+              </select>
+            </li>
+            <li>
+              <label for="Nombre_Proveedor">
+                <input type="text" class="mb-3" id="Nombre_Proveedor" placeholder="Nombre_Proveedor">
+              </label>
+            </li>
+            <li>
+              <label for="Numero producto">
+                <input type="text" class="mb-3" id="ingresar producto" placeholder=" Numero producto" required />
+              </label>
+            </li>
+            <li>
+              <label for="Direccion">
+                <input type="text" class="mb-3" id="Direccion" placeholder="Direccion">
+              </label>
+            </li>
+            <li>
+              <label for="Telefono">
+                <input type="text" class="mb-3" id="Telefono" placeholder="Telefono">
+              </label>
+            </li>
+            <li>
+              <label for="Agregar">
+                <input class="mb-3 btn btn-primary" type="submit" value="Agregar" />
+                </label<label for="Eliminar">
+                <input class="mb-3 btn btn-primary" type="submit" value="Eliminar" />
+              </label>
+
+            </li>
+          </ul>
+        </form>
+      </article>
+    </section>
+  </main>
+</body>
+<footer>Gracias por la visita</footer>
+
+</html>
