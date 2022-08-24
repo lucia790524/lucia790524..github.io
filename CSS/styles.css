@@ -13,7 +13,7 @@
 
 /* Clases para el fondo de pagina.*/
 .container {
-  background-image: url(/img/fondo_001.jpg);
+  background-image: url(../img/fondo_001.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
