@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,21 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>demo</title>
   <link rel="StyleSheet" href="/CSS/styles.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/CSS/bootstrap.css" type="text/css" media="screen" />
 </head>
 
 <body class="container">
   <header>
-    <nav class="navbar">
+    <nav class="navbar fixed-top">
       <figure class="dropdown">
         <img class="logo-ppal" src="../img/logo_MrJiro.jpeg" alt="logo" />
       </figure>
       <ul class="dropdown">
-        <button class="dropbtn">
-          Inicio
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <li class="dropdown-content">
-          <a href="frm_inicio_sesion.html">Inicio de Sesion</a>
+        <a class="text-white" href="Index.html">Inicio</a>
       </ul>
       <ul class="dropdown">
         <button class="dropbtn">
@@ -62,18 +58,9 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <li class="dropdown-content">
-          <a href="frm_provedores.html">Registrar Proveedor</a>
+          <a href="frm_registro_provedores.html">Registrar Proveedor</a>
           <a href="frm_buscar_proveedor.html">Buscar Proveedor</a>
           <a href="frm_modificar_proveedor.html">Modificar Proveedor</a>
-        </li>
-      </ul>
-      <ul class="dropdown">
-        <button class="dropbtn">
-          Facturacion
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <li class="dropdown-content">
-          <a href="frm_facturacion.html">Registrar facturacion</a>
         </li>
       </ul>
       <ul class="dropdown">
@@ -88,7 +75,25 @@
       </ul>
     </nav>
   </header>
-  <main></main>
+  <main>
+    <section>
+      <article class="init-container">
+        <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Mision</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non viverra augue. Nulla facilisi. Nullam sagittis eleifend fringilla. Fusce varius leo in accumsan tincidunt. Proin eu nulla tempor, bibendum elit quis, porta dui. Suspendisse fringilla elementum turpis eu convallis. Integer ultricies scelerisque quam, non dapibus tellus congue id. Aliquam dapibus risus quis urna volutpat, sed porta ligula pretium. Cras ultrices massa a nisl porttitor, a ultricies sapien finibus. Suspendisse molestie quam sit amet interdum venenatis.</p>
+          </div>
+        </div>
+        <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Vision</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas laborum cupiditate quaerat similique, error laboriosam, reiciendis ducimus molestiae dolor nam, nulla enim tempora itaque vitae exercitationem. Sint ad ducimus recusandae?</p>
+          </div>
+        </div>
+      </article>
+
+      </section>
+  </main>
   <footer>Gracias por la visita</footer>
 </body>
 </html>
