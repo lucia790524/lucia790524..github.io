@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="StyleSheet" href="/CSS/styles.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="/CSS/bootstrap.css" type="text/css" media="screen" />
-  <title>Modificar producto</title>
+  <title>Clientes</title>
 </head>
 
 <body class="container">
@@ -17,7 +17,7 @@
         <img class="logo-ppal" src="../img/logo_MrJiro.jpeg" alt="logo" />
       </figure>
       <ul class="dropdown">
-        <a class="text-white" href="Index.html">Inicio</a>
+        <a class="text-white" href="../Index.html">Inicio</a>
       </ul>
       <ul class="dropdown">
         <button class="dropbtn">
@@ -83,40 +83,51 @@
             <figure>
               <img class="logo" src="../img/MrJiro.jpeg" alt="logo" />
             </figure>
-            <h3 class="text-white">Modificar producto</h3>
+            <h3 class="text-white">Registro Cliente</h3>
             <li>
-              <label for="codigo de producto">
-                <input class="mb-3" type="text" id="name" placeholder="Codigo del Producto" required minlength="4"
-                  maxlength="14" />
+              <select name="Tipo de documento" class="form-select mb-3 form-select-sm">
+                <option selected>Tipo de documento</option>
+                <option value="CC">Cedula</option>
+                <option value="NIT">NIT</option>
+                <option value="CE">Cedula Extranjeria</option>
+              </select>
+            </li>
+            <li class="mb-3">
+              <label for="Numero de documento">
+                <input type="text" id="identificacion" placeholder="Numero de documento" required />
               </label>
             </li>
-            <li>
+            <li class="mb-3">
               <label for="nombre">
-                <input type="text" id="" placeholder="Nombre" class="mb-3" />
+                <input type="text" name="nombre" placeholder="Nombre" required />
+              </label>
+            </li>
+            <li class="mb-3">
+              <label for="apellido">
+                <input type="family_ name" name="apellido" placeholder="Apellido" required />
+              </label>
+            </li>
+            <li class="mb-3">
+              <label for="direccion">
+                <input type="street-address" name="direccion" placeholder="Direccion" required />
+              </label>
+            </li>
+            <li class="mb-3">
+              <label for="telefono">
+                <input type="tel" name="telefono" placeholder="Telefono" required />
+              </label>
+            </li>
+            <li class="mb-3">
+              <label for="email">
+                <input type="text" id="name" name="email" placeholder="Correo" required />
               </label>
             </li>
             <li>
-              <label for="precio">
-                <input class="mb-3" type="text" placeholder="Precio" />
+              <label for="Crear">
+                <input type="submit" required class="btn btn-primary" />
               </label>
-            </li>
-            <li>
-              <label for="descripcion">
-                <input class="mb-3" type="text" id="descripcion" placeholder="Breve descripcion" />
-              </label>
-            </li>
-            <li>
-              <label for="fecha de vencimiento">
-                <input type="datetime-local" class="mb-3" id="Fecha de vencimiento"
-                  placeholder="fecha de vencimiento" />
-              </label>
-            </li>
-            <li>
-              <label for="Agregar">
-                <input type="submit" value="Agregar" class="btn btn-primary" />
-              </label>
-              <label for="cancelar">
-                <input type="submit" value="cancelar" class="btn btn-primary" />
+              <label for="Cancelar">
+                <input type="submit" value="Cancelar" class="btn btn-primary" />
               </label>
             </li>
           </ul>
@@ -124,8 +135,6 @@
       </article>
     </section>
   </main>
-
-
 </body>
 <footer>Gracias por la visita</footer>
 
